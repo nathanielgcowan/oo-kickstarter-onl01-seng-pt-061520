@@ -3,12 +3,12 @@ class Project
   
   def initialize(title)
     @title = title
-    @backers=[]
+    @backers = []
   end
   
   def backers(backer)
       backers << backer
-      backed_projects.backer << self
+      backers.backed_projects << self
   end
     
 end
